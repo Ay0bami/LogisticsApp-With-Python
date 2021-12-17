@@ -253,7 +253,7 @@ def main():
             else:
                 while True:
                     try:
-
+                        
                         user_name="Admin"
                         message=input("Enter your Admin password (Password should be uppercase and/or number)\n")
                         message=encrypt_data(message)
@@ -271,7 +271,7 @@ def main():
                         head=True        
                         while(head==True):
                             c=int(input(" Press 1 to view product\n Press 2 to insert product\n Press 3 to Update product\n"))
-                            if(t not in [1,2,3]):
+                            if(c not in [1,2,3]):
                                     raise InvalidChoice
                             if(c==1):
                                 AdminProductView()
